@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Activity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="390dp"
+        android:layout_height="352dp"
+        android:layout_gravity="top"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        app:srcCompat="@drawable/geekltd2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="147dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/enter_your_login_and_password_to_access_the_application"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="203dp" />
+    <EditText
+        android:id="@+id/EntertheLogin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/enter_the_login"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/EnterThePassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EntertheLogin2"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/enter_the_password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="#858585 "
+        android:textColorLink="#071E0B0B"
+        tools:ignore="TextFields" />
+
+    <Button
+        android:id="@+id/loginbtn2"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EnterThePassword2"
+        android:layout_centerHorizontal="true"
+        android:text="@string/enter" />
+
+    <Button
+        android:id="@+id/regbtn2"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="164dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/loginbtn2"
+        android:layout_marginLeft="122dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/to_register"
+        android:textColor="@color/teal_200"
+        android:textSize="16sp" />
+</RelativeLayout>
